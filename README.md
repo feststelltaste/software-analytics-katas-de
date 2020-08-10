@@ -2,9 +2,9 @@
 Kleine Übungen, welche das Denken und den Umgang mit datengetriebenen Softwareanalysen schulen sollen.
 
 ## Herzklopfen
-Kategorie: klassisch
-Datenquelle: Logdateien
-Schwierigkeitsgrad: einfach
+Kategorie: klassisch  
+Datenquelle: Logdateien  
+Schwierigkeitsgrad: einfach  
 
 Die Betriebssoftware der Geisterbahnattraktion namens DependencyHell wurde als Microservices implementiert.
 Da es immer wieder zu unerklärlichen Ausfällen in unheimlichen Fällen kam, wurde eine Ping-API für alle Services eingeführt.
@@ -27,9 +27,9 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
 
 
 ## Tests sind auch nur Code
-Kategorie: klassisch
-Datenquelle: Versionskontrollsystem
-Schwierigkeitsgrad: mittel
+Kategorie: klassisch  
+Datenquelle: Versionskontrollsystem  
+Schwierigkeitsgrad: mittel  
 
 ### Problembeschreibung
 Die EntwicklerInnen der integrierten Entwicklungsumgebung "IntelliJ" haben festgestellt, dass sie Versionsstände auschecken, Änderungen vornehmen und diese aber erst Tage später in einem großen Commit in das Repo zurück committen.
@@ -55,9 +55,9 @@ Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf fo
 
 
 ## Unter der Haube
-Kategorie: klassisch
-Datenquelle: Versionskontrollsystem
-Schwierigkeitsgrad: einfach
+Kategorie: klassisch  
+Datenquelle: Versionskontrollsystem  
+Schwierigkeitsgrad: einfach  
 
 ### Problembeschreibung
 Die in Java geschriebene Software PartyHardy nutzt für den Zugriff auf eine Datenbank eine proprietäre Schnittstelle namens BYODBA (Build Your Own Database Access).
