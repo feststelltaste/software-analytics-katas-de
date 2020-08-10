@@ -24,3 +24,31 @@ Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf fo
 
 ### Startpunkte
 -	Repository: https://github.com/JetBrains/intellij-community
+
+
+## Unter der Haube
+
+### Problembeschreibung
+Die in Java geschriebene Software PartyHardy nutzt für den Zugriff auf eine Datenbank eine proprietäre Schnittstelle namens BYODBA (Build Your Own Database Access).
+Leider hatte der Datenbankhersteller die Unterstützung für diese Schnittstelle und der gleichnamigen 3rd-Party-Bibliothek abgekündigt.
+Das Entwicklungsteam musste daher auf das neuere Verfahren JDBC umgestellt werden. 
+Es mussten viele Codestellen angepasst werden.
+Die Arbeiten ziehen sich jetzt schon lange hin.
+Das Vertrauen auf der Produktseite scheint zu schwinden.
+
+### Verbesserungsmaßnahme
+
+Das Entwicklungsteam möchte den Fortschritt der Bibliotheksablösung transparent gestalten. Sie möchten folgendes versuchen:
+
+- Visualisierung der jeweiligen Codemengen für die alte und neue Bibliothek über die Zeit hinweg.
+
+### Zusätzliche Informationen
+
+- Das Team hat den Code für die beiden Bibliotheken in jeweils unterschiedlichen Verzeichnisstrukturen abgelegt.
+
+### Zusätzlicher Kontext
+-	Das Softwareprojekt verwendet einen Continuous Integration Server.
+-	Der Quellcode wird mit dem Versionskontrollsystem Git verwaltet.	
+
+### Startpunkte
+- CSV-Datei mit einem Git-Log-Numstat-Output, welche die Änderungen pro Datei inkl. geänderten Codezeilen festhält.
