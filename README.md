@@ -28,6 +28,27 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
 ### Startpunkte
 - Logdatei mit Ping-Anfragen aller Services
 
+## Motivationsproblem
+Kategorie: klassisch  
+Datenquelle: Stack Overflow  
+Schwierigkeitsgrad: einfach 
+
+### Problemkontext
+EntwicklerInnen in einem Softwareunternehmen verwenden ein Versionskontrollsystem (kurz "VCS") namens CVS (Concurrent Versions System).
+Nun haben EntwicklerInnen die Idee, auf SVN (Subversion) zu migrieren.
+Du glaubst jedoch, dass "Git" mittlerweile zum Standard in der Softwareentwicklungs-Community geworden ist.
+Also schlägst Du Git als Alternative für das Team vor.
+
+### Analyseauftrag
+- Finde datengestütze Fakten, die zeigen, dass die Softwareentwicklungs-Community hauptsächlich das Versionskontrollsystem Git verwendet!
+
+### Zusatzinformationen
+- Du weißt, dass Stack Overflow eine Plattform ist, die Antworten auf Fragen bzgl. bestimmter Technologien bereitstellt.
+
+### Startpunkt
+- Datei mit einer Statistik über die gestellten Fragen auf Stackoverflow über Versionskontrollsysteme über mehrere Jahre hinweg.
+
+
 ## Tests sind auch nur Code
 Kategorie: klassisch  
 Datenquelle: Versionskontrollsystem  
