@@ -4,13 +4,13 @@ Kleine Übungen, welche das Denken und den Umgang mit datengetriebenen Softwarea
 ## Herzklopfen
 Kategorie: klassisch  
 Datenquelle: Logdateien  
-Schwierigkeitsgrad: einfach  
+Schwierigkeitsgrad: mittel  
 
 ### Problemkontext
 Die Betriebssoftware der Geisterbahnattraktion namens DependencyHell wurde als Microservices implementiert.
 Da es immer wieder zu unerklärlichen Ausfällen in unheimlichen Fällen kam, wurde eine Ping-API für alle Services eingeführt.
 Damit können Services andere Services aufrufen, um zu sehen, ob diese derzeit erreichbar sind.
-Für die API wurde eine Konvention eingeführt, wonach jeder funktionierende Service einen Aufruf von `/healthy` mit dem HTTP-Statuscode 200 quittieren soll.
+Für die API wurde eine Konvention eingeführt, wonach jeder funktionierende Service einen Aufruf von `/healthy` mit dem HTTP-Statuscode 201 quittieren soll.
 Es gibt jedoch immer noch sporadische Ausfallerscheinungen.
 
 ### Analyseauftrag
@@ -23,6 +23,7 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
 -	Es liegt eine aggregierte Logdatei vor, welche die Ping-Aufrufe über mehrere Tage protokolliert.
 - Das Logdatei-Format ist bei allen Services gleich
 - Die Betriebssoftware läuft im eigenen Rechenzentrum des Austellerbetriebs.
+- Der Schaustellerbetrieb läuft meist ab 13 Uhr und geht auch einmal tief in die Nacht hinein.
 
 ### Startpunkte
 - Logdatei mit Ping-Anfragen aller Services
