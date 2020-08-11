@@ -33,6 +33,7 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
   - `url`: Aufgerufene Serivce-URL
   - `ms`: Antwortzeit des aufgerufenen Service-Calls
 - Dataset-URL: [`datasets/scarylog.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/scarylog.csv)
+  - Möglicher Header-String: `"timestamp", "status", "method", "url", "ms"`
 
 ## Motivationsproblem
 Kategorie: klassisch  
