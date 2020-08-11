@@ -55,24 +55,24 @@ Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf fo
 ## Unter der Haube
 Kategorie: klassisch  
 Datenquelle: Versionskontrollsystem  
-Schwierigkeitsgrad: einfach  
+Schwierigkeitsgrad: mittel  
 
 ### Problemkontext
-Die in Java geschriebene Software PartyHardy nutzt für den Zugriff auf eine Datenbank eine proprietäre Schnittstelle namens BYODBA (Build Your Own Database Access).
-Leider hatte der Datenbankhersteller die Unterstützung für diese Schnittstelle und der gleichnamigen 3rd-Party-Bibliothek abgekündigt.
-Das Entwicklungsteam musste daher auf das neuere Verfahren JDBC umgestellt werden. 
-Es mussten viele Codestellen angepasst werden.
+Ein in Java geschriebenes Kundenmanagementsystem für Tierarztpraxen namens PetClinic nutzt für den Zugriff auf eine Datenbank die Schnittstelle JDBC (Java Database Connectivity).
+Die Enterprise-Architekten haben nun jedoch festgelegt, das zukünftig alle Datenbankzugriffe über ein objektrelationales Mapping mittels der Schnittelle von JPA (Java Persistence API) erfolgen soll.
+Das Entwicklungsteam muss daher auch ihren Zugriff auf JPA neben der normalen Feature-Entwicklung umstellen. 
+Hierfür mussten und müssen immer noch viele Codestellen angepasst werden.
 Die Arbeiten ziehen sich jetzt schon lange hin.
-Das Vertrauen auf der Produktseite scheint zu schwinden.
+Das Vertrauen seitens des Produktmanagements scheint jedoch langsam zu schwinden.
 
 ### Analyseauftrag
-Das Entwicklungsteam möchte den Fortschritt der Bibliotheksablösung transparent gestalten. Sie möchten folgendes versuchen:
+Das Entwicklungsteam möchte den Fortschritt der Technologieablösung transparent gestalten. Sie möchten folgendes versuchen:
 
-- Visualisierung der jeweiligen Codemengen für die alte und neue Bibliothek über die Zeit hinweg.
+- Visualisierung der jeweiligen Codemengen für die alte und neue Bibliothek über die Zeit hinweg, um den Fortschritt zu zeigen.
 
 ### Zusatzinformationen
 
-- Das Team hat den Code für die beiden Bibliotheken in jeweils unterschiedlichen Verzeichnisstrukturen abgelegt.
+- Das Team hat den Code für die beiden Schnittstellen (JDBC bzw. JPA) in jeweils unterschiedlichen Java-Packages (= Verzeichnissen) mit dem jeweiligen Namen der Schnittstelle abgelegt.
 -	Der Quellcode wird mit dem Versionskontrollsystem Git verwaltet.	
 -	Das Softwareprojekt verwendet einen Continuous Integration Server.
 
