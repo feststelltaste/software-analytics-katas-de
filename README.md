@@ -32,7 +32,7 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
   - `method`: Genutzte HTTP-Anfragemethode
   - `url`: Aufgerufene Serivce-URL
   - `ms`: Antwortzeit des aufgerufenen Service-Calls
-- Dataset-URL: [`./datasets/scarylog.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/scarylog.csv)
+- Dataset-URL: [`datasets/scarylog.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/scarylog.csv)
 
 ## Motivationsproblem
 Kategorie: klassisch  
