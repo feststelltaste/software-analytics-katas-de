@@ -10,7 +10,7 @@ Schwierigkeitsgrad: mittel
 Die Betriebssoftware der Geisterbahnattraktion namens DependencyHell wurde als Microservices implementiert.
 Da es immer wieder zu unerklärlichen Ausfällen in unheimlichen Fällen kam, wurde eine Ping-API für alle Services eingeführt.
 Damit können Services andere Services aufrufen, um zu sehen, ob diese derzeit erreichbar sind.
-Für die API wurde eine Konvention eingeführt, wonach jeder funktionierende Service einen Aufruf von `/healthy` mit dem HTTP-Statuscode 201 quittieren soll.
+Für die API wurde eine Konvention eingeführt, wonach jeder funktionierende Service einen Aufruf von `/healthy` mit dem HTTP-Statuscode 200 quittieren soll.
 Es gibt jedoch immer noch sporadische Ausfallerscheinungen.
 
 ### Analyseauftrag
