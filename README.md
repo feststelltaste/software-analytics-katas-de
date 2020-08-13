@@ -115,3 +115,24 @@ Das Entwicklungsteam möchte den Fortschritt der Technologieablösung transparen
 ### Startpunkte
 - Eine (vorverarbeitete) Git Log Numstat CSV-Datei (~3 MB) mit einem Git-Log-Numstat-Output, welche pro Zeile die Änderungen pro Datei inkl. geänderten Anzahl an Codezeilen festhält.
 - Dataset-URL: [`datasets/db_api_refactoring.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/db_api_refactoring.csv)
+
+## Zugang verweigert
+Kategorie: klassisch  
+Datenquelle: statisch, dynamisch  
+Schwierigkeit: anspruchsvoll  
+
+### Problemkontext
+Im internen Versicherungsanwendungssystem InsurHappy ist eine Web-Anwendung, welche starken Gebrauch von Mainframe-Kommunikation vornimmt.
+Bei der Verwendung kommt es hier jedoch sporadisch zu Berechtigungsfehlern in der Anwendung.
+Es wird vermutet, dass einzelne Rechte von einzelnen Benutzern für die Ausführung von COBOL-Routinen nicht vorhanden sind.
+Die Mainframe-Verantwortlichen sind gleichzeitig sehr besorgt, dass Benutzer nicht zu viele Rechte erhalten. 
+
+### Analyseauftrag
+Es wird eine Liste mit fehlenden Benutzerberechtigungen benötigt, die zeigt, welcher Benutzer mit welcher Benutzer-ID welche Routinen benötigt, um mit InsurHappy reibungslos arbeiten zu können.
+
+### Startpunkte
+- Die COBOL-Routinen werden von CICS-Transaktionen umklammert. Diese sind in der Datei ([`datasets/access/TRANSACT.DEF`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/TRANSACT.DEF) definiert und mit `EBCDIC 500` encodiert.
+- Die CICS-Transaktionen wiederum werden über ein Mapping-Datei mit den SOAP-Servicemethoden verdrahtet. Die Definitionen liegen in [`datasets/access/webservice_definition_v0.1.xml`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/webservice_definition_v0.1.xml) (für eine einfachere Variante, siehe [`datasets/access/webservice_definition_v0.1.json`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/webservice_definition_v0.1.json)). Diese SOAP-Service-Methoden werden von InsurHappy zur Kommunikation mit dem Mainframe aufgerufen.
+- Es liegt eine Log-Datei namens [`datasets/access/calls.log`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/calls.log) von InsurHappy vor, welche einen Überblick über die in der vergangenen Woche aufgerufenen Services bietet.
+- Weiterhin existiert eine sog. "Access-Matrix" ([`datasets/access/access_matrix.xlsx`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/access_matrix.xlsx)) die angibt, welche Benutzer welche COBOL-Routinen aufrufen dürfen.
+- Zudem ist Liste der echten Namen der Benutzer vorhanden ([`datasets/access/user_list.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/access/user_list.csv), um User-IDs aufzuschlüsseln.
