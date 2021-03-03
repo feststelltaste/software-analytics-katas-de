@@ -1,5 +1,5 @@
 # Software Analytics Katas
-Kleine Übungen, welche das Denken und den Umgang mit datengetriebenen Softwareanalysen schulen sollen.
+Kleine Übungen, welche das analytische Denken und den Umgang mit datengetriebenen Softwareanalysen schulen sollen.
 
 _Wenn Du sofort mit Python & pandas loslegen möchtest, kannst Du durch einen Klick auf diesen Button sofort tun!_ [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/feststelltaste/software-analytics-katas-de)
 
