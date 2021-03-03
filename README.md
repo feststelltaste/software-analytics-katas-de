@@ -67,7 +67,7 @@ Datenquelle: Versionskontrollsystem
 Schwierigkeitsgrad: mittel  
 
 ### Problemkontext
-Die EntwicklerInnen der integrierten Entwicklungsumgebung "IntelliJ" haben festgestellt, dass sie Versionsstände auschecken, Änderungen vornehmen und diese aber erst Tage später in einem großen Commit in das Repo zurück committen.
+Die EntwicklerInnen der integrierten Entwicklungsumgebung "IntelliJ IDEA" haben festgestellt, dass sie Versionsstände auschecken, Änderungen vornehmen und diese aber erst Tage später in einem großen Commit in das Repo zurück committen.
 Meistens wird hier auch noch der Test-Code vergessen einzuchecken (oder existiert überhaupt nicht, was dann später beim Code-Review erst entdeckt wird).
 
 Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf folgende Maßnahme geeinigt:
@@ -79,11 +79,9 @@ Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf fo
 Zeige, dass die Entwickler jetzt so arbeiten, wie sie es vereinbart haben!
 Verfolge dazu die Commit-Aktivitäten und finde heraus, ob die EntwicklerInnen jetzt zum Code auch Tests dazuschreiben, so wie sie es sollten.
 
-
-
 ### Zusatzinformationen
 -	Nur Quellcode, der in Java oder Kotlin geschrieben ist, ist von der Maßnahme betroffen.
--	IntelliJ verwendet für Test-Code das Postfix „Test“ als Kennung.
+-	IntelliJ IDEA verwendet für Test-Code das Postfix „Test“ als Kennung.
 -	Der Quellcode wird mit dem Versionskontrollsystem Git verwaltet.
 -	Das Softwareprojekt verwendet einen Continuous Integration Server.
 
