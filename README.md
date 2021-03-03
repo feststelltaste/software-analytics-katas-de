@@ -3,8 +3,31 @@ Kleine Übungen, welche das analytische Denken und den Umgang mit datengetrieben
 
 _Wenn Du sofort mit Python & pandas loslegen möchtest, kannst Du durch einen Klick auf diesen Button sofort tun!_ [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/feststelltaste/software-analytics-katas-de)
 
+## Motivationsproblem
+Datenquelle: Stack Overflow  
+Schwierigkeitsgrad: einfach  
+
+### Problemkontext
+EntwicklerInnen in einem Softwareunternehmen verwenden ein Versionskontrollsystem (kurz "VCS") namens CVS (Concurrent Versions System).
+Nun haben EntwicklerInnen die Idee, auf SVN (Subversion) zu migrieren.
+Du glaubst jedoch, dass "Git" mittlerweile zum Standard in der Softwareentwicklungs-Community geworden ist.
+Also schlägst Du Git als Alternative für das Team vor.
+
+### Analyseauftrag
+- Finde datengestütze Fakten, die zeigen, dass die Softwareentwicklungs-Community hauptsächlich das Versionskontrollsystem Git verwendet!
+
+### Zusatzinformationen
+- Du weißt, dass Stack Overflow eine Plattform ist, die Antworten auf Fragen bzgl. bestimmter Technologien bereitstellt.
+
+### Startpunkt
+- Datei (~ 4 MB) mit einer Statistik über die gestellten Fragen auf Stack Overflow über Versionskontrollsysteme über mehrere Jahre hinweg.
+  - `CreationDate`: Der Zeitstempel des Erstellungsdatums eines Stack Overflow Posts (= Frage)
+  - `TagName`: Der Tag-Name für eine Technologie (in unserem Fall für nur 4 VCSes: "cvs", "svn", "git" und "mercurial")
+  - `ViewCount`: Die Anzahl der Ansichten eines Beitrags
+- Dataset-URL: [`datasets/stackoverflow_vcs_data_subset.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/stackoverflow_vcs_data_subset.csv)
+ 
+ 
 ## Herzklopfen
-Kategorie: klassisch  
 Datenquelle: Logdateien  
 Schwierigkeitsgrad: mittel  
 
@@ -37,32 +60,8 @@ Das Entwicklungsteam möchte näher eingrenzen, wann und warum die sporadischen 
 - Dataset-URL: [`datasets/scarylog.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/scarylog.csv)
   - Möglicher Header-String: `"timestamp", "status", "method", "url", "ms"`
 
-## Motivationsproblem
-Kategorie: klassisch  
-Datenquelle: Stack Overflow  
-Schwierigkeitsgrad: einfach  
-
-### Problemkontext
-EntwicklerInnen in einem Softwareunternehmen verwenden ein Versionskontrollsystem (kurz "VCS") namens CVS (Concurrent Versions System).
-Nun haben EntwicklerInnen die Idee, auf SVN (Subversion) zu migrieren.
-Du glaubst jedoch, dass "Git" mittlerweile zum Standard in der Softwareentwicklungs-Community geworden ist.
-Also schlägst Du Git als Alternative für das Team vor.
-
-### Analyseauftrag
-- Finde datengestütze Fakten, die zeigen, dass die Softwareentwicklungs-Community hauptsächlich das Versionskontrollsystem Git verwendet!
-
-### Zusatzinformationen
-- Du weißt, dass Stack Overflow eine Plattform ist, die Antworten auf Fragen bzgl. bestimmter Technologien bereitstellt.
-
-### Startpunkt
-- Datei (~ 4 MB) mit einer Statistik über die gestellten Fragen auf Stack Overflow über Versionskontrollsysteme über mehrere Jahre hinweg.
-  - `CreationDate`: Der Zeitstempel des Erstellungsdatums eines Stack Overflow Posts (= Frage)
-  - `TagName`: Der Tag-Name für eine Technologie (in unserem Fall für nur 4 VCSes: "cvs", "svn", "git" und "mercurial")
-  - `ViewCount`: Die Anzahl der Ansichten eines Beitrags
-- Dataset-URL: [`datasets/stackoverflow_vcs_data_subset.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/stackoverflow_vcs_data_subset.csv)
 
 ## Tests sind auch nur Code
-Kategorie: klassisch  
 Datenquelle: Versionskontrollsystem  
 Schwierigkeitsgrad: mittel  
 
@@ -94,7 +93,6 @@ Verfolge dazu die Commit-Aktivitäten und finde heraus, ob die EntwicklerInnen j
 - Dataset-URL: [`datasets/intellij_testing.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/intellij_testing.csv)
 
 ## Unter der Haube
-Kategorie: klassisch  
 Datenquelle: Versionskontrollsystem  
 Schwierigkeitsgrad: mittel  
 
@@ -122,7 +120,6 @@ Das Entwicklungsteam möchte den Fortschritt der Technologieablösung transparen
 - Dataset-URL: [`datasets/db_api_refactoring.csv`](https://raw.githubusercontent.com/feststelltaste/software-analytics-katas-de/master/datasets/db_api_refactoring.csv)
 
 ## Zugang verweigert
-Kategorie: klassisch  
 Datenquelle: statisch, dynamisch  
 Schwierigkeit: anspruchsvoll  
 
