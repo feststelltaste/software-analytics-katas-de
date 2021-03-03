@@ -70,11 +70,16 @@ Schwierigkeitsgrad: mittel
 Die EntwicklerInnen der integrierten Entwicklungsumgebung "IntelliJ" haben festgestellt, dass sie Versionsstände auschecken, Änderungen vornehmen und diese aber erst Tage später in einem großen Commit in das Repo zurück committen.
 Meistens wird hier auch noch der Test-Code vergessen einzuchecken (oder existiert überhaupt nicht, was dann später beim Code-Review erst entdeckt wird).
 
-### Analyseauftrag
 Zur Verbesserung des Entwicklungsvorgehens haben sich die EntwicklerInnen auf folgende Maßnahme geeinigt:
 
 -	Alle Commits müssen nun weniger als 500 Zeilen Code enthalten.
 -	Das Verhältnis von Test-Code zu Quellcode muss am Tagesende mindestens 0,7:1 betragen.
+
+### Analyseauftrag
+Zeige, dass die Entwickler jetzt so arbeiten, wie sie es vereinbart haben!
+Verfolge dazu die Commit-Aktivitäten und finde heraus, ob die EntwicklerInnen jetzt zum Code auch Tests dazuschreiben, so wie sie es sollten.
+
+
 
 ### Zusatzinformationen
 -	Nur Quellcode, der in Java oder Kotlin geschrieben ist, ist von der Maßnahme betroffen.
